@@ -1,5 +1,0 @@
-# Ignore temp and cache artifacts
-**/__pycache__
-**/*.tmp
-**/*.temp
-**/*.log
