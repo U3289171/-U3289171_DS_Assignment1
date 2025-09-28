@@ -1,0 +1,14 @@
+# Track heavy binary-like assets in LFS
+reports/figures/** filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.jpg filter=lfs diff=lfs merge=lfs -text
+*.jpeg filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+*.ipynb filter=lfs diff=lfs merge=lfs -text
+
+# NOTE: Datasets and models are managed by DVC in this template.
+# If you decide to store certain datasets/models with LFS instead of DVC,
+# uncomment lines below (but do not duplicate tracking between LFS and DVC):
+# data/** filter=lfs diff=lfs merge=lfs -text
+# models/** filter=lfs diff=lfs merge=lfs -text
